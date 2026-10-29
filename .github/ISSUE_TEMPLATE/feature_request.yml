@@ -1,0 +1,79 @@
+name: Feature request
+description: Suggest a capability or behaviour for PewwTerm
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. PewwTerm is deliberately a read-only browser,
+        so file-management operations such as copy, move, delete and rename are
+        out of scope as a core feature.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight checks
+      options:
+        - label: I searched existing issues and pull requests for this suggestion.
+          required: true
+        - label: This request is about PewwTerm, not an external tool such as mpv or FFmpeg.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do, and what makes it difficult today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+      description: Describe the smallest feature that would solve the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing shortcuts, external tools or workarounds you have tried.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Navigation and focus
+        - Search and sorting
+        - Image preview
+        - Video preview or playback
+        - PDF and document preview
+        - Responsive layout or accessibility
+        - Documentation
+        - Packaging and installation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Mockups, related projects, command output or constraints.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to help implement or test this change.
+          required: false
