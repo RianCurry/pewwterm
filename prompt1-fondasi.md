@@ -1,0 +1,1 @@
+Implement Phase 1–4 of the PewwTerm PRD. Inspect the environment, create the Python project, implement data models, file classification, linear search, binary search, recursive traversal with symlink-loop protection, and pytest tests. Run the tests, fix all failures, and explain every source file. Do not implement multimedia previews yet.
